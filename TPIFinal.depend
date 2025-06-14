@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1749873495 source:d:\codigos\tpifinal\main.cpp
+	<iostream>
+	"inicioPartida.h"
+	"primerTirada.h"
+	<ctime>
+
+1749164546 d:\codigos\tpifinal\iniciopartida.h
+
+1749873361 d:\codigos\tpifinal\primertirada.h
+	<string>
+
+1749874270 source:d:\codigos\tpifinal\pedirnombre.cpp
+	<iostream>
+
+1749898432 source:d:\codigos\tpifinal\iniciopartida.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"primerTirada.h"
+	"pedirNombre.h"
+	"jugarPartida.h"
+
+1749873903 d:\codigos\tpifinal\pedirnombre.h
+	<string>
+
+1749874421 source:d:\codigos\tpifinal\primertirada.cpp
+	"primerTirada.h"
+	<iostream>
+
+1749899383 source:d:\codigos\tpifinal\jugarpartida.cpp
+	<iostream>
+	<string>
+	<string>
+	"tiradaDado12.h"
+	"funciones.h"
+
+1749601896 source:d:\codigos\tpifinal\tiradadado12.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+
+1749642897 d:\codigos\tpifinal\tirardado12.h
+
+1749898052 d:\codigos\tpifinal\tiradadado12.h
+
+1749898430 d:\codigos\tpifinal\jugarpartida.h
+
+1749898537 d:\codigos\tpifinal\funciones.h
+
+1749898630 source:d:\codigos\tpifinal\funciones.cpp
+	<cstdlib>
+

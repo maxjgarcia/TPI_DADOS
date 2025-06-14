@@ -1,0 +1,11 @@
+realizar la funcion jugar []
+realizar la funcion de tirada dados 12 [x]
+mover menu a su propia funcion []
+agregar pragma  once en los h []
+
+notas:
+
+el stock de dados hacerlos en un vector.
+
+
+

@@ -6,16 +6,18 @@
 using namespace std;
 
 int main(){
-    srand(time(0)); // esta ubicado en el main para que no vuelva a llamarse, se puede reutilizar para nuevas funciones que creen num randoms
-
+    srand(time(0));
     int opcionMenu;
 
-  cout   << "---------------------------------------\n"
+  do {
+    system("cls");
+cout   << "---------------------------------------\n"
          << "1 - Iniciar Partida\n"
          << "2 - Mostrar Estadisticas\n"
          << "3 - Mostrar Creditos\n"
          << "0 - Salir\n"
-         << "---------------------------------------\n";
+         << "---------------------------------------\n"
+         << "Seleccione una opcion: ";
   cin >> opcionMenu;
 
     switch (opcionMenu) {
@@ -29,12 +31,14 @@ int main(){
     // mostrar creditos ( nombre de los integrantes del grupo? )
     break;
   case 0:
-    // Salir
+    cout << "Cerrando juego... Gracias por jugar!" << endl;
     break;
   default:
     cout << "Opcion no valida. Por favor, intente nuevamente." << endl;
     break;
 }
+  system("pause");
+  } while (opcionMenu != 0);
 
 
     return 0;

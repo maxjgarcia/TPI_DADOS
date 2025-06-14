@@ -2,6 +2,9 @@
 #define PRIMERTIRADA_H_INCLUDED
 #pragma once
 
-int primerTirada(const char jugador1[], const char jugador2[]);
+#include <string>
+using namespace std;
 
-#endif // PRIMERTIRADA_H_INCLUDED
+int primerTirada(string nombreJugador1, string nombreJugador2);
+
+#endif

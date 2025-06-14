@@ -32,7 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Headers.h" />
+		<Unit filename="inicioPartida.cpp" />
+		<Unit filename="inicioPartida.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="pedirNombre.cpp" />
+		<Unit filename="pedirNombre.h" />
+		<Unit filename="primerTirada.cpp" />
+		<Unit filename="primerTirada.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

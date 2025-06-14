@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int primerTirada(const char jugador1[], const char jugador2[]) {
+int primerTirada(string nombreJugador1, string nombreJugador2) {
 
     int dado1 = 0, dado2 = 0;
 
@@ -13,19 +13,19 @@ int primerTirada(const char jugador1[], const char jugador2[]) {
         dado1 = rand() % 6 + 1;
         dado2 = rand() % 6 + 1;
 
-        cout << "\n" << jugador1 << " tira: " << dado1 << endl;
-        cout << jugador2 << " tira: " << dado2 << endl;
+        cout << nombreJugador1 << " tira: " << dado1 << endl;
+        cout << endl << nombreJugador2 << " tira: " << dado2 << endl;
 
         if (dado1 == dado2) {
-            cout << "Empate. Se repite la tirada." << endl << endl;
+            cout << "\nEmpate. Se repite la tirada.\n" << endl << endl;
         }
     }
 
     if (dado1 > dado2) {
-        cout << jugador1 << " comienza la partida." << endl;
-        return 1;  // jugador 1 comienza
+        return 1;
     } else {
-        cout << jugador2 << " comienza la partida." << endl;
-        return 2;  // jugador 2 comienza
+        return 2;
     }
 }
+
+
