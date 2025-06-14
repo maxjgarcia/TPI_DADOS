@@ -40,6 +40,7 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador) {
             // seleccionarDados();
 
             turnoActual = 2;
+            system("pause");
         } else {
             cout << "\nTurno de " << nombreJugador2 << endl;
 
@@ -57,6 +58,7 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador) {
             // seleccionarDados();
 
             turnoActual = 1;
+            system("pause");
         }
     }
 }
