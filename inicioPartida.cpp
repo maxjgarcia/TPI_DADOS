@@ -29,7 +29,7 @@ int inicioPartida() {
         cout << nombreJugador2 <<" inicia la partida."<< endl;
     };
 
-  jugarPartida(nombreJugador1, nombreJugador2, iniciador);
+  jugarPartida( nombreJugador1,  nombreJugador2,  iniciador);
 
     return 0;
 }

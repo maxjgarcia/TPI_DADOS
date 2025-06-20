@@ -7,5 +7,5 @@ notas:
 
 el stock de dados hacerlos en un vector.
 
-
+usar una flag "bool objetivoLogrado = false" que cambia a true en un if si se suma el num target para realizar la operacion de paso de dados
 

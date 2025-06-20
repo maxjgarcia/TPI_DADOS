@@ -1,79 +1,60 @@
-#include <iostream>     // Para cout, endl
-#include <string>       // Para string
+#include <iostream>
 #include <string>
 #include "tiradaDado12.h"
 #include "funciones.h"
+#include "seleccionarDados.h"
 
 using namespace std;
 
 
-
 void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador) {
-    int stockDados1[12], stockDados2[12];
-    int dados1 = 6, dados2 = 6;
-    int puntaje1 = 0, puntaje2 = 0;
+    int stockdadosJ1[12], stockdadosJ2[12];
+    int dadosJ1 = 6, dadosJ2 = 6;
+    int puntajeJ1 = 0, puntajeJ2 = 0;
 
-    cargarVector(stockDados1, dados1);
-    cargarVector(stockDados2, dados2);
+    cargarVector(stockdadosJ1, dadosJ1);
+    cargarVector(stockdadosJ2, dadosJ2);
 
     int turnoActual = iniciador;
+    system("pause");
+    system("cls");
 
-    //control de rondas
-  for (int ronda = 1; ronda <= 3; ronda++) {
-    cout << "\n RONDA " << ronda << "\n";
-    //control de turnos
-    for (int i = 0; i < 2; i++) {
-        if (turnoActual == 1) {
-            cout << "\nTurno de " << nombreJugador1 << endl;
+    for (int ronda = 1; ronda <= 3; ronda++) {
+        system("cls");
 
-            int numeroTarget = tiradaDado12();
-            cout << "Numero objetivo: " << numeroTarget << endl;
+        cout << "\n RONDA " << ronda << "\n";
 
-            // carga dados jug 1
-            cargarVector(stockDados1, dados1);
-            cout << "Dados disponibles:\n";
-            for (int j = 0; j < dados1; j++) {
-                cout << "[" << j << "] = " << stockDados1[j] <<"\t";
+        if (dadosJ1 == 0) {
+            cout << "El Jugador: " << nombreJugador1 << " gano la partida por quedarse sin dados, +10.000 puntos" << endl;
+            puntajeJ1 += 10000;
+            break;
+        } else if (dadosJ2 == 0) {
+            cout << "El Jugador: " << nombreJugador2 << " gano la partida por quedarse sin dados, +10.000 puntos" << endl;
+            puntajeJ2 += 10000;
+            break;
+        }
+
+        for (int i = 0; i < 2; i++) {
+
+            if (turnoActual == 1) {
+              seleccionarDados(nombreJugador1, stockdadosJ1, dadosJ1, dadosJ2, puntajeJ1);
+              turnoActual = 2;
+            } else if (turnoActual == 2){
+              seleccionarDados(nombreJugador2, stockdadosJ2, dadosJ2, dadosJ1, puntajeJ2);
+              turnoActual = 1;
             }
-            cout << endl;
-
-            // seleccionarDados();
-
-            turnoActual = 2;
-            system("pause");
-        } else {
-            cout << "\nTurno de " << nombreJugador2 << endl;
-
-            int numeroTarget = tiradaDado12();
-            cout << "Numero objetivo: " << numeroTarget << endl;
-
-            // Cargar y mostrar dados del jugador 2
-            cargarVector(stockDados2, dados2);
-            cout << "Dados disponibles:\n";
-            for (int j = 0; j < dados2; j++) {
-                cout << "[" << j << "] = " << stockDados2[j] <<"\t";
-            }
-            cout << endl;
-
-            // seleccionarDados();
-
-            turnoActual = 1;
             system("pause");
         }
     }
-}
-    // Puntaje
-    cout << "\nPuntajes:\n";
-    cout << nombreJugador1 << ": " << puntaje1 << " puntos\n";
-    cout << nombreJugador2 << ": " << puntaje2 << " puntos\n";
-     if (puntaje1 > puntaje2)
+
+    cout << "\nPuntajes Finales:\n";
+    cout << nombreJugador1 << ": " << puntajeJ1 << " puntos\n";
+    cout << nombreJugador2 << ": " << puntajeJ2 << " puntos\n";
+
+    if (puntajeJ1 > puntajeJ2)
         cout << "Ganador: " << nombreJugador1 << endl;
-    else if (puntaje2 > puntaje1)
+    else if (puntajeJ2 > puntajeJ1)
         cout << "Ganador: " << nombreJugador2 << endl;
     else
         cout << "Empate" << endl;
-
-
-
 }
-

@@ -40,6 +40,6 @@ cout   << "---------------------------------------\n"
   system("pause");
   } while (opcionMenu != 0);
 
-
     return 0;
 }
+

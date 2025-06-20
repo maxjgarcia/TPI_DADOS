@@ -33,13 +33,21 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Headers.h" />
+		<Unit filename="funciones.cpp" />
+		<Unit filename="funciones.h" />
 		<Unit filename="inicioPartida.cpp" />
 		<Unit filename="inicioPartida.h" />
+		<Unit filename="jugarPartida.cpp" />
+		<Unit filename="jugarPartida.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="pedirNombre.cpp" />
 		<Unit filename="pedirNombre.h" />
 		<Unit filename="primerTirada.cpp" />
 		<Unit filename="primerTirada.h" />
+		<Unit filename="seleccionarDados.cpp" />
+		<Unit filename="seleccionarDados.h" />
+		<Unit filename="tiradaDado12.cpp" />
+		<Unit filename="tiradaDado12.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
