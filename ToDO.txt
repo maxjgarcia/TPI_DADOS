@@ -1,14 +1,4 @@
-realizar la funcion jugar []
+realizar la funcion jugar [x]
 realizar la funcion de tirada dados 12 [x]
-mover menu a su propia funcion []
+mover menu a su propia funcion [x]
 agregar pragma  once en los h []
-
-notas:
-
-el stock de dados hacerlos en un vector.
-
-usar una flag "bool objetivoLogrado = false" que cambia a true en un if si se suma el num target para realizar la operacion de paso de dados
-
-ultimo push, se agrego la funcion de creditos,
-se checkea sin los dados son 0 para terminar el game en ronda y turno en lugar de solo ronda, funcion sinDados()
-se pregunta si se quieren ver los creditos al final del juego.
