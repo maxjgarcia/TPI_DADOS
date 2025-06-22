@@ -2,6 +2,7 @@
 #include "inicioPartida.h"
 #include "primerTirada.h"
 #include <ctime>
+#include "mostrarCreditos.h"
 
 using namespace std;
 
@@ -28,7 +29,7 @@ cout   << "---------------------------------------\n"
     // mostrar estadisticas (cantidad de rondas jugadas nombre de jugadores ?)
     break;
   case 3:
-    // mostrar creditos ( nombre de los integrantes del grupo? )
+    mostrarCreditos();
     break;
   case 0:
     cout << "Cerrando juego... Gracias por jugar!" << endl;

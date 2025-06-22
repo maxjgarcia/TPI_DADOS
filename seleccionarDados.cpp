@@ -31,7 +31,7 @@ void seleccionarDados(string nombreJugador, int stockdados[], int &dados, int &d
         }
 
         if (!opcionesDisponibles) {
-        cout << "\nNo te quedan dados disponibles. Tirada fallida.\n";
+        cout << "\nNo te quedan dados disponibles.\nTirada fallida, recibis un dado del rival.\n";
         if (dadosOponente > 1) {
             dados++;
             dadosOponente--;
@@ -59,7 +59,7 @@ void seleccionarDados(string nombreJugador, int stockdados[], int &dados, int &d
             dadosOponente += cantDadosUsados;
             return;
         } else if (suma > numeroTarget) {
-            cout << "\nTe pasaste del numero objetivo. Tirada fallida.\n";
+            cout << "\nTe pasaste del numero objetivo. \nTirada fallida, recibis un dado del rival.\n";
             if (dadosOponente > 1) {
                 dados++;
                 dadosOponente--;

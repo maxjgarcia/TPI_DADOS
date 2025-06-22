@@ -40,12 +40,18 @@
 		<Unit filename="jugarPartida.cpp" />
 		<Unit filename="jugarPartida.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="mostrarCreditos.cpp" />
+		<Unit filename="mostrarCreditos.h" />
+		<Unit filename="mostrarGanador.cpp" />
+		<Unit filename="mostrarGanador.h" />
 		<Unit filename="pedirNombre.cpp" />
 		<Unit filename="pedirNombre.h" />
 		<Unit filename="primerTirada.cpp" />
 		<Unit filename="primerTirada.h" />
 		<Unit filename="seleccionarDados.cpp" />
 		<Unit filename="seleccionarDados.h" />
+		<Unit filename="sinDados.cpp" />
+		<Unit filename="sinDados.h" />
 		<Unit filename="tiradaDado12.cpp" />
 		<Unit filename="tiradaDado12.h" />
 		<Extensions>

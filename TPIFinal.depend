@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1750286399 source:d:\codigos\tpifinal\main.cpp
+1750601889 source:d:\codigos\tpifinal\main.cpp
 	<iostream>
 	"inicioPartida.h"
 	"primerTirada.h"
 	<ctime>
+	"mostrarCreditos.h"
 
 1749164546 d:\codigos\tpifinal\iniciopartida.h
 
@@ -13,7 +14,7 @@
 1749874270 source:d:\codigos\tpifinal\pedirnombre.cpp
 	<iostream>
 
-1750364765 source:d:\codigos\tpifinal\iniciopartida.cpp
+1750606183 source:d:\codigos\tpifinal\iniciopartida.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
@@ -27,14 +28,15 @@
 	"primerTirada.h"
 	<iostream>
 
-1750434797 source:d:\codigos\tpifinal\jugarpartida.cpp
+1750606114 source:d:\codigos\tpifinal\jugarpartida.cpp
 	<iostream>
 	<string>
 	"tiradaDado12.h"
 	"funciones.h"
 	"seleccionarDados.h"
+	"mostrarCreditos.h"
 
-1749601896 source:d:\codigos\tpifinal\tiradadado12.cpp
+1750435800 source:d:\codigos\tpifinal\tiradadado12.cpp
 	<cstdlib>
 	<ctime>
 	<iostream>
@@ -50,13 +52,26 @@
 1749898630 source:d:\codigos\tpifinal\funciones.cpp
 	<cstdlib>
 
-1750434433 source:d:\codigos\tpifinal\seleccionardados.cpp
+1750606055 source:d:\codigos\tpifinal\seleccionardados.cpp
 	<iostream>
 	<string>
 	"tiradaDado12.h"
 	"funciones.h"
 
 1750435257 d:\codigos\tpifinal\seleccionardados.h
+	<iostream>
+	<string>
+
+1750601865 d:\codigos\tpifinal\mostrarcreditos.h
+
+1750602174 source:d:\codigos\tpifinal\mostrarcreditos.cpp
+	<iostream>
+
+1750607631 source:d:\codigos\tpifinal\mostrarganador.cpp
+	<iostream>
+	<string>
+
+1750607537 source:d:\codigos\tpifinal\sindados.cpp
 	<iostream>
 	<string>
 

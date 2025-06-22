@@ -24,9 +24,9 @@ int inicioPartida() {
     int iniciador = primerTirada(nombreJugador1,nombreJugador2);
 
     if (iniciador == 1) {
-        cout << nombreJugador1 <<" inicia la partida."<< endl;
+        cout <<endl << nombreJugador1 <<" inicia la partida.\n";
     } else {
-        cout << nombreJugador2 <<" inicia la partida."<< endl;
+        cout <<endl << nombreJugador2 <<" inicia la partida.\n";
     };
 
   jugarPartida( nombreJugador1,  nombreJugador2,  iniciador);
