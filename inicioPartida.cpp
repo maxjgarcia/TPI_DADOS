@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include <cstdlib>
 #include <ctime>
 #include "primerTirada.h"
@@ -9,11 +8,10 @@ using namespace std;
 
 
 
-int inicioPartida() {
-
-    string nombreJugador1;
-    string nombreJugador2;
-
+int inicioPartida(int &puntajeMaxJugador, string &nombreJugadorPuntajeMax) {
+    int puntajeJ1 = 0; 
+    int puntajeJ2 = 0;
+    string nombreJugador1, nombreJugador2;
     system("cls");
     pedirNombres( nombreJugador1, nombreJugador2);
     system("cls");
@@ -29,7 +27,7 @@ int inicioPartida() {
         cout <<endl << nombreJugador2 <<" inicia la partida.\n";
     };
 
-  jugarPartida( nombreJugador1,  nombreJugador2,  iniciador);
+  jugarPartida( nombreJugador1,  nombreJugador2,  iniciador, puntajeJ1, puntajeJ2, puntajeMaxJugador, nombreJugadorPuntajeMax);
 
     return 0;
 }

@@ -3,14 +3,18 @@
 #include "primerTirada.h"
 #include <ctime>
 #include "mostrarCreditos.h"
+#include "mostrarEstadisticas.h"
 
 using namespace std;
 
 int main(){
     srand(time(0));
     int opcionMenu;
+    int puntajeMaxJugador = 0;
+    string nombreJugadorPuntajeMax = "";
 
   do {
+    
     system("cls");
 cout   << "---------------------------------------\n"
          << "1 - Iniciar Partida\n"
@@ -23,10 +27,10 @@ cout   << "---------------------------------------\n"
 
     switch (opcionMenu) {
   case 1:
-    inicioPartida();
+    inicioPartida(puntajeMaxJugador, nombreJugadorPuntajeMax);
     break;
   case 2:
-    // mostrar estadisticas (cantidad de rondas jugadas nombre de jugadores ?)
+    mostrarEstadisticas(puntajeMaxJugador, nombreJugadorPuntajeMax);
     break;
   case 3:
     mostrarCreditos();

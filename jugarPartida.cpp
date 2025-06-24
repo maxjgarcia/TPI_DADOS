@@ -6,13 +6,12 @@
 #include "mostrarCreditos.h"
 #include "sinDados.h"
 #include "mostrarGanador.h"
-
+#include "mostrarEstadisticas.h"
 using namespace std;
 
-void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador) {
+void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador, int &puntajeJ1, int &puntajeJ2, int &puntajeMaxJugador, string &nombreJugadorPuntajeMax) {
     int stockdadosJ1[12], stockdadosJ2[12];
     int dadosJ1 = 6, dadosJ2 = 6;
-    int puntajeJ1 = 0, puntajeJ2 = 0;
     char op;
 
     cargarVector(stockdadosJ1, dadosJ1);
@@ -22,7 +21,7 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador) {
     system("pause");
     system("cls");
 
-    for (int ronda = 1; ronda <= 1; ronda++) {
+    for (int ronda = 1; ronda <= 3; ronda++) {
         system("cls");
 
        if (sinDados(nombreJugador1, dadosJ1, puntajeJ1)) return;
@@ -48,22 +47,19 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador) {
 
     }
 
+  //creditos
+   mostrarGanador(nombreJugador1, nombreJugador2, puntajeJ1, puntajeJ2, puntajeMaxJugador, nombreJugadorPuntajeMax);
 
-   mostrarGanador(nombreJugador1, nombreJugador2, puntajeJ1, puntajeJ2);
+   //mini menu final partida
+        cout << "\nPresione cualquier tecla para regresar al menu principal.";
+        cout << "\nO bien, puede explorar otras opciones:\n\t'c' - Ver creditos\n\t'e' - Ver estadisticas\n";
+        cout << "\nIngrese su eleccion: "; cin >> op;
 
-   //creditos
-    do{
-        cout << "\nVer creditos? ingrese 's' o 'n': "; cin >> op;
-
-        if(op == 's'){
+        if(op == 'c'){
         mostrarCreditos();
-        } else if (op == 'n'){
-        break;}
-        else {
-        cout << "Entrada invalida. Intente nuevamente.\n";
-        }
-        }
-    while (op != 's' && op != 'n');
+        } else if (op == 'e'){
+        mostrarEstadisticas(puntajeMaxJugador, nombreJugadorPuntajeMax);}
+       
 
 }
 

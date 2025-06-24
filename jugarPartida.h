@@ -1,8 +1,6 @@
-#ifndef JUGARPARTIDA_H_INCLUDED
-#define JUGARPARTIDA_H_INCLUDED
 #pragma once
 
-void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador);
+void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador, int &puntajeJ1, int &puntajeJ2, int &puntajeMaxJugador, string &nombreJugadorPuntajeMax);
 
 
-#endif // JUGARPARTIDA_H_INCLUDED
+

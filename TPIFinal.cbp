@@ -42,6 +42,8 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="mostrarCreditos.cpp" />
 		<Unit filename="mostrarCreditos.h" />
+		<Unit filename="mostrarEstadisticas.cpp" />
+		<Unit filename="mostrarEstadisticas.h" />
 		<Unit filename="mostrarGanador.cpp" />
 		<Unit filename="mostrarGanador.h" />
 		<Unit filename="pedirNombre.cpp" />

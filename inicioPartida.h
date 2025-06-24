@@ -1,3 +1,4 @@
 #pragma once
 
-int inicioPartida();
+
+int inicioPartida(int &puntajeMaxJugador, std::string &nombreJugadorPuntajeMax);
