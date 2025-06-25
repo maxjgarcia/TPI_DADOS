@@ -7,6 +7,7 @@
 #include "sinDados.h"
 #include "mostrarGanador.h"
 #include "mostrarEstadisticas.h"
+
 using namespace std;
 
 void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador, int &puntajeJ1, int &puntajeJ2, int &puntajeMaxJugador, string &nombreJugadorPuntajeMax) {
@@ -24,45 +25,47 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador, i
     for (int ronda = 1; ronda <= 3; ronda++) {
         system("cls");
 
-       if (sinDados(nombreJugador1, dadosJ1, puntajeJ1)) return;
-       if (sinDados(nombreJugador2, dadosJ2, puntajeJ2)) return;
+        if (sinDados(nombreJugador1, dadosJ1, puntajeJ1)) return;
+        if (sinDados(nombreJugador2, dadosJ2, puntajeJ2)) return;
 
         for (int i = 0; i < 2; i++) {
             cout << "\n RONDA " << ronda << "\n";
             if (turnoActual == 1) {
-              seleccionarDados(nombreJugador1, stockdadosJ1, dadosJ1, dadosJ2, puntajeJ1);
-              turnoActual = 2;
+                seleccionarDados(nombreJugador1, stockdadosJ1, dadosJ1, dadosJ2, puntajeJ1);
+                turnoActual = 2;
             } else if (turnoActual == 2){
-              seleccionarDados(nombreJugador2, stockdadosJ2, dadosJ2, dadosJ1, puntajeJ2);
-              turnoActual = 1;
+                seleccionarDados(nombreJugador2, stockdadosJ2, dadosJ2, dadosJ1, puntajeJ2);
+                turnoActual = 1;
             }
 
-       if (sinDados(nombreJugador1, dadosJ1, puntajeJ1)) return;
-       if (sinDados(nombreJugador2, dadosJ2, puntajeJ2)) return;
+            if (sinDados(nombreJugador1, dadosJ1, puntajeJ1)) return;
+            if (sinDados(nombreJugador2, dadosJ2, puntajeJ2)) return;
 
+
+            system("pause");
+            system("cls");
+        }
+    }
+
+
+    mostrarGanador(nombreJugador1, nombreJugador2, puntajeJ1, puntajeJ2, puntajeMaxJugador, nombreJugadorPuntajeMax);
+
+
+    cout << "\nPartida Finalizada.";
+    cout << "\n\nOpciones:\n\t'c' - Ver creditos\n\t'e' - Ver estadisticas\n\t'otra tecla' - Volver al menu principal\n";
+    cout << "\nIngrese su eleccion: ";
+    cin >> op;
+
+    if(op == 'c'){
+        system("cls");
+        mostrarCreditos();
 
         system("pause");
+    } else if (op == 'e'){
         system("cls");
+        mostrarEstadisticas(puntajeMaxJugador, nombreJugadorPuntajeMax);
+
+        system("pause");
     }
-
-    }
-
-  //creditos
-   mostrarGanador(nombreJugador1, nombreJugador2, puntajeJ1, puntajeJ2, puntajeMaxJugador, nombreJugadorPuntajeMax);
-
-   //mini menu final partida
-        cout << "\nPresione cualquier tecla para regresar al menu principal.";
-        cout << "\nO bien, puede explorar otras opciones:\n\t'c' - Ver creditos\n\t'e' - Ver estadisticas\n";
-        cout << "\nIngrese su eleccion: "; cin >> op;
-
-        if(op == 'c'){
-        mostrarCreditos();
-        } else if (op == 'e'){
-        mostrarEstadisticas(puntajeMaxJugador, nombreJugadorPuntajeMax);}
-       
 
 }
-
-
-
-

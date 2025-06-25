@@ -1,11 +1,9 @@
 # depslib dependency file v1.0
-1750723960 source:d:\codigos\tpifinal\main.cpp
+1750750041 source:d:\codigos\tpifinal\main.cpp
 	<iostream>
-	"inicioPartida.h"
-	"primerTirada.h"
 	<ctime>
-	"mostrarCreditos.h"
-	"mostrarEstadisticas.h"
+	<string>
+	"menu.h"
 
 1750722159 d:\codigos\tpifinal\iniciopartida.h
 
@@ -29,7 +27,7 @@
 	"primerTirada.h"
 	<iostream>
 
-1750720978 source:d:\codigos\tpifinal\jugarpartida.cpp
+1750750041 source:d:\codigos\tpifinal\jugarpartida.cpp
 	<iostream>
 	<string>
 	"tiradaDado12.h"
@@ -38,6 +36,7 @@
 	"mostrarCreditos.h"
 	"sinDados.h"
 	"mostrarGanador.h"
+	"mostrarEstadisticas.h"
 
 1750435800 source:d:\codigos\tpifinal\tiradadado12.cpp
 	<cstdlib>
@@ -88,4 +87,14 @@
 	<string>
 
 1750722029 d:\codigos\tpifinal\mostrarestadisticas.h
+
+1750750041 d:\codigos\tpifinal\menu.h
+	<string>
+
+1750750041 source:d:\codigos\tpifinal\menu.cpp
+	<iostream>
+	"menu.h"
+	"inicioPartida.h"
+	"mostrarEstadisticas.h"
+	"mostrarCreditos.h"
 

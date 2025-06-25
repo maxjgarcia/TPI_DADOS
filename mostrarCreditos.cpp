@@ -6,10 +6,10 @@ void mostrarCreditos() {
     cout << "---------------------------------------\n"
          << "Desarrollado por el Equipo 32\n\n"
          << "Integrantes:\n"
-         << "\tSantiago Batista \tLegajo ####\n"
-         << "\tDario Nehuen Chaves \tLegajo ####\n"
+         << "\tSantiago Batista \t\tLegajo #####\n"
+         << "\tDario Nehuen Chaves \t\tLegajo 17849\n"
          << "\tMaximiliano Jesus Garcia \tLegajo 33465\n"
-         << "\tLuciano Facundo Tito Cedron \tLegajo ####\n"
+         << "\tLuciano Facundo Tito Cedron \tLegajo 32593\n"
          << "---------------------------------------\n";
 
 }
