@@ -7,6 +7,7 @@
 #include "sinDados.h"
 #include "mostrarGanador.h"
 #include "mostrarEstadisticas.h"
+#include "rlutil.h"
 
 using namespace std;
 
@@ -29,12 +30,12 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador, i
         if (sinDados(nombreJugador2, dadosJ2, puntajeJ2)) return;
 
         for (int i = 0; i < 2; i++) {
-            cout << "\n RONDA " << ronda << "\n";
+
             if (turnoActual == 1) {
-                seleccionarDados(nombreJugador1, stockdadosJ1, dadosJ1, dadosJ2, puntajeJ1);
+                seleccionarDados(nombreJugador1, stockdadosJ1, dadosJ1, dadosJ2, puntajeJ1, ronda);
                 turnoActual = 2;
             } else if (turnoActual == 2){
-                seleccionarDados(nombreJugador2, stockdadosJ2, dadosJ2, dadosJ1, puntajeJ2);
+                seleccionarDados(nombreJugador2, stockdadosJ2, dadosJ2, dadosJ1, puntajeJ2, ronda);
                 turnoActual = 1;
             }
 
@@ -48,11 +49,13 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador, i
     }
 
 
-    mostrarGanador(nombreJugador1, nombreJugador2, puntajeJ1, puntajeJ2, puntajeMaxJugador, nombreJugadorPuntajeMax);
+    mostrarGanador(nombreJugador1, nombreJugador2, puntajeJ1, puntajeJ2, puntajeMaxJugador, nombreJugadorPuntajeMax, dadosJ1, dadosJ2);
 
-
+    rlutil::setColor(rlutil::LIGHTRED);
     cout << "\nPartida Finalizada.";
-    cout << "\n\nOpciones:\n\t'c' - Ver creditos\n\t'e' - Ver estadisticas\n\t'otra tecla' - Volver al menu principal\n";
+    rlutil::setColor(rlutil::WHITE);
+     cout << "\n\n---------------------------------------\n\n";
+    cout << "Opciones:\n\t'c' - Ver creditos\n\t'e' - Ver estadisticas\n\t'otra tecla' - Volver al menu principal\n";
     cout << "\nIngrese su eleccion: ";
     cin >> op;
 

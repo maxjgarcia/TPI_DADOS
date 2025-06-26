@@ -2,3 +2,6 @@ realizar la funcion jugar [x]
 realizar la funcion de tirada dados 12 [x]
 mover menu a su propia funcion [x]
 agregar pragma  once en los h []
+
+
+agregar en los result finales la cantidad de dados de stock [x]

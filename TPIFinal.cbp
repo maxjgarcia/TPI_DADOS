@@ -33,6 +33,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Headers.h" />
+		<Unit filename="dibujarBase.cpp" />
+		<Unit filename="dibujarBase.h" />
+		<Unit filename="dibujarDado.cpp" />
+		<Unit filename="dibujarDado.h" />
 		<Unit filename="funciones.cpp" />
 		<Unit filename="funciones.h" />
 		<Unit filename="inicioPartida.cpp" />
@@ -40,6 +44,8 @@
 		<Unit filename="jugarPartida.cpp" />
 		<Unit filename="jugarPartida.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="menu.h" />
 		<Unit filename="mostrarCreditos.cpp" />
 		<Unit filename="mostrarCreditos.h" />
 		<Unit filename="mostrarEstadisticas.cpp" />
@@ -50,6 +56,7 @@
 		<Unit filename="pedirNombre.h" />
 		<Unit filename="primerTirada.cpp" />
 		<Unit filename="primerTirada.h" />
+		<Unit filename="rlutil.h" />
 		<Unit filename="seleccionarDados.cpp" />
 		<Unit filename="seleccionarDados.h" />
 		<Unit filename="sinDados.cpp" />

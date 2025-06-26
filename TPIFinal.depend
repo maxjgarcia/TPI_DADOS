@@ -13,13 +13,14 @@
 1749874270 source:d:\codigos\tpifinal\pedirnombre.cpp
 	<iostream>
 
-1750720976 source:d:\codigos\tpifinal\iniciopartida.cpp
+1750900947 source:d:\codigos\tpifinal\iniciopartida.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
 	"primerTirada.h"
 	"pedirNombre.h"
 	"jugarPartida.h"
+	"rlutil.h"
 
 1750434891 d:\codigos\tpifinal\pedirnombre.h
 
@@ -27,7 +28,7 @@
 	"primerTirada.h"
 	<iostream>
 
-1750750041 source:d:\codigos\tpifinal\jugarpartida.cpp
+1750902715 source:d:\codigos\tpifinal\jugarpartida.cpp
 	<iostream>
 	<string>
 	"tiradaDado12.h"
@@ -37,6 +38,7 @@
 	"sinDados.h"
 	"mostrarGanador.h"
 	"mostrarEstadisticas.h"
+	"rlutil.h"
 
 1750435800 source:d:\codigos\tpifinal\tiradadado12.cpp
 	<cstdlib>
@@ -54,36 +56,41 @@
 1749898630 source:d:\codigos\tpifinal\funciones.cpp
 	<cstdlib>
 
-1750606055 source:d:\codigos\tpifinal\seleccionardados.cpp
+1750901056 source:d:\codigos\tpifinal\seleccionardados.cpp
 	<iostream>
 	<string>
 	"tiradaDado12.h"
 	"funciones.h"
+	"rlutil.h"
+	"dibujarDado.h"
 
-1750435257 d:\codigos\tpifinal\seleccionardados.h
+1750899329 d:\codigos\tpifinal\seleccionardados.h
 	<iostream>
 	<string>
 
 1750601865 d:\codigos\tpifinal\mostrarcreditos.h
 
-1750721675 source:d:\codigos\tpifinal\mostrarcreditos.cpp
+1750901397 source:d:\codigos\tpifinal\mostrarcreditos.cpp
 	<iostream>
+	"rlutil.h"
 
-1750720973 source:d:\codigos\tpifinal\mostrarganador.cpp
+1750902838 source:d:\codigos\tpifinal\mostrarganador.cpp
 	<iostream>
 	<string>
+	"rlutil.h"
 
 1750607537 source:d:\codigos\tpifinal\sindados.cpp
 	<iostream>
 	<string>
 
-1750722387 source:d:\codigos\tpifinal\mostrarestadisticas.cpp
+1750900358 source:d:\codigos\tpifinal\mostrarestadisticas.cpp
 	<iostream>
+	"rlutil.h"
 
 1750607489 d:\codigos\tpifinal\sindados.h
 	<string>
 
-1750722065 d:\codigos\tpifinal\mostrarganador.h
+1750902726 d:\codigos\tpifinal\mostrarganador.h
 	<string>
 
 1750722029 d:\codigos\tpifinal\mostrarestadisticas.h
@@ -91,10 +98,38 @@
 1750750041 d:\codigos\tpifinal\menu.h
 	<string>
 
-1750750041 source:d:\codigos\tpifinal\menu.cpp
+1750902343 source:d:\codigos\tpifinal\menu.cpp
 	<iostream>
 	"menu.h"
 	"inicioPartida.h"
 	"mostrarEstadisticas.h"
 	"mostrarCreditos.h"
+	"rlutil.h"
+
+1750890075 d:\codigos\tpifinal\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1750894705 d:\codigos\tpifinal\dibujardado.h
+
+1750894525 source:d:\codigos\tpifinal\dibujarbase.cpp
+	<iostream>
+	"rlutil.h"
+
+1750894639 source:d:\codigos\tpifinal\dibujardado.cpp
+	<iostream>
+	"rlutil.h"
+	"dibujarBase.h"
+
+1750894605 d:\codigos\tpifinal\dibujarbase.h
 

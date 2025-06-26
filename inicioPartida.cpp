@@ -4,12 +4,13 @@
 #include "primerTirada.h"
 #include "pedirNombre.h"
 #include "jugarPartida.h"
+#include "rlutil.h"
 using namespace std;
 
 
 
 int inicioPartida(int &puntajeMaxJugador, string &nombreJugadorPuntajeMax) {
-    int puntajeJ1 = 0; 
+    int puntajeJ1 = 0;
     int puntajeJ2 = 0;
     string nombreJugador1, nombreJugador2;
     system("cls");
@@ -22,9 +23,13 @@ int inicioPartida(int &puntajeMaxJugador, string &nombreJugadorPuntajeMax) {
     int iniciador = primerTirada(nombreJugador1,nombreJugador2);
 
     if (iniciador == 1) {
+        rlutil::setColor(rlutil::CYAN);
         cout <<endl << nombreJugador1 <<" inicia la partida.\n";
+        rlutil::setColor(rlutil::WHITE);
     } else {
+        rlutil::setColor(rlutil::CYAN);
         cout <<endl << nombreJugador2 <<" inicia la partida.\n";
+        rlutil::setColor(rlutil::WHITE);
     };
 
   jugarPartida( nombreJugador1,  nombreJugador2,  iniciador, puntajeJ1, puntajeJ2, puntajeMaxJugador, nombreJugadorPuntajeMax);
