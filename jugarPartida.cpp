@@ -63,12 +63,12 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador, i
         system("cls");
         mostrarCreditos();
 
-        system("pause");
+
     } else if (op == 'e'){
         system("cls");
         mostrarEstadisticas(puntajeMaxJugador, nombreJugadorPuntajeMax);
 
-        system("pause");
+
     }
 
 }

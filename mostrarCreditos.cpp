@@ -11,8 +11,7 @@ void mostrarCreditos() {
     rlutil::setColor(rlutil::WHITE);
     cout << "Integrantes:\n";
          rlutil::setColor(rlutil::CYAN);
-    cout << "\tSantiago Batista \t\tLegajo #####\n"
-         << "\tDario Nehuen Chaves \t\tLegajo 17849\n"
+    cout << "\tDario Nehuen Chaves \t\tLegajo 17849\n"
          << "\tMaximiliano Jesus Garcia \tLegajo 33465\n"
          << "\tLuciano Facundo Tito Cedron \tLegajo 32593\n";
          rlutil::setColor(rlutil::WHITE);

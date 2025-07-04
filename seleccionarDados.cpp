@@ -9,11 +9,33 @@ using namespace std;
 
 void seleccionarDados(string nombreJugador, int stockdados[], int &dados, int &dadosOponente, int &puntaje, int ronda){
 
-    int numeroTarget = tiradaDado12();
+    int numeroTarget;
     int suma = 0;
     int cantDadosUsados = 0;
     int dadoSeleccionado = -1;
     bool opcionesDisponibles = false;
+
+    rlutil::cls();
+    rlutil::setColor(rlutil::BROWN);
+    cout << " RONDA " << ronda << "\n";
+    rlutil::setColor(rlutil::WHITE);
+    cout << "\nTurno de " << nombreJugador << endl;
+
+    rlutil::setColor(rlutil::YELLOW);
+    cout << "\nPresione una tecla para lanzar los dados objetivo...\n";
+    rlutil::setColor(rlutil::WHITE);
+    system("pause > nul");
+
+    numeroTarget = tiradaDado12();
+
+
+    cout << "\nNumero objetivo: " << numeroTarget << endl;
+
+
+    rlutil::setColor(rlutil::YELLOW);
+    cout << "\nAhora, presione una tecla para lanzar sus " << dados << " dados de stock...";
+    rlutil::setColor(rlutil::WHITE);
+    system("pause > nul");
 
     cargarVector(stockdados, dados);
 
@@ -23,7 +45,9 @@ void seleccionarDados(string nombreJugador, int stockdados[], int &dados, int &d
         rlutil::setColor(rlutil::BROWN);
         cout << " RONDA " << ronda << "\n";
         rlutil::setColor(rlutil::WHITE);
+
         cout << "\nTurno de " << nombreJugador << endl;
+
         cout << "\nNumero objetivo: " << numeroTarget << endl;
         rlutil::setColor(rlutil::CYAN);
         cout << "Suma actual: " << suma << endl;
@@ -33,7 +57,7 @@ void seleccionarDados(string nombreJugador, int stockdados[], int &dados, int &d
         for (int j = 0; j < dados; j++) {
             if (stockdados[j] != 55) {
                 opcionesDisponibles = true;
-             //   cout << "[" << j + 1 << "] = " << stockdados[j] << endl;
+        //   cout << "[" << j + 1 << "] = " << stockdados[j] << endl;
         //posi de los dados en pantalla
             int posX = 5 + j * 10;
             int posY = 10;
