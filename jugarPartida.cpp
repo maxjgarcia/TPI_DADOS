@@ -54,7 +54,7 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador, i
     rlutil::setColor(rlutil::LIGHTRED);
     cout << "\nPartida Finalizada.";
     rlutil::setColor(rlutil::WHITE);
-     cout << "\n\n---------------------------------------\n\n";
+    cout << "\n\n---------------------------------------\n\n";
     cout << "Opciones:\n\t'c' - Ver creditos\n\t'e' - Ver estadisticas\n\t'otra tecla' - Volver al menu principal\n";
     cout << "\nIngrese su eleccion: ";
     cin >> op;
@@ -63,11 +63,9 @@ void jugarPartida(string nombreJugador1, string nombreJugador2, int iniciador, i
         system("cls");
         mostrarCreditos();
 
-
     } else if (op == 'e'){
         system("cls");
         mostrarEstadisticas(puntajeMaxJugador, nombreJugadorPuntajeMax);
-
 
     }
 

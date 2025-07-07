@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1750750041 source:d:\codigos\tpifinal\main.cpp
+1751644375 source:d:\codigos\tpifinal\main.cpp
 	<iostream>
 	<ctime>
 	<string>
@@ -28,7 +28,7 @@
 	"primerTirada.h"
 	<iostream>
 
-1751588102 source:d:\codigos\tpifinal\jugarpartida.cpp
+1751644769 source:d:\codigos\tpifinal\jugarpartida.cpp
 	<iostream>
 	<string>
 	"tiradaDado12.h"
@@ -56,7 +56,7 @@
 1749898630 source:d:\codigos\tpifinal\funciones.cpp
 	<cstdlib>
 
-1751587727 source:d:\codigos\tpifinal\seleccionardados.cpp
+1751630802 source:d:\codigos\tpifinal\seleccionardados.cpp
 	<iostream>
 	<string>
 	"tiradaDado12.h"
@@ -74,7 +74,7 @@
 	<iostream>
 	"rlutil.h"
 
-1750903211 source:d:\codigos\tpifinal\mostrarganador.cpp
+1751644757 source:d:\codigos\tpifinal\mostrarganador.cpp
 	<iostream>
 	<string>
 	"rlutil.h"
@@ -84,7 +84,7 @@
 	<string>
 	"rlutil.h"
 
-1750900358 source:d:\codigos\tpifinal\mostrarestadisticas.cpp
+1751644741 source:d:\codigos\tpifinal\mostrarestadisticas.cpp
 	<iostream>
 	"rlutil.h"
 

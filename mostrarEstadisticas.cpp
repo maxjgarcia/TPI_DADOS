@@ -4,9 +4,13 @@ using namespace std;
 
 void mostrarEstadisticas(int &puntajeJugadorMax, string &nombreJugadorMax) {
     system("cls");
-    if (puntajeJugadorMax == 0){
+    if (puntajeJugadorMax == -1){
         rlutil::setColor(rlutil::YELLOW);
         cout << "No se jugaron partidas, no existen puntajes.\n";
+        rlutil::setColor(rlutil::WHITE);
+    } else if (puntajeJugadorMax == 0){
+        rlutil::setColor(rlutil::YELLOW);
+        cout << "Los jugadores empataron su juego con 0 puntos.\n";
         rlutil::setColor(rlutil::WHITE);
     } else {
     rlutil::setColor(rlutil::YELLOW);

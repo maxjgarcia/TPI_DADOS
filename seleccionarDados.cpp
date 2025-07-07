@@ -57,9 +57,10 @@ void seleccionarDados(string nombreJugador, int stockdados[], int &dados, int &d
         for (int j = 0; j < dados; j++) {
             if (stockdados[j] != 55) {
                 opcionesDisponibles = true;
-        //   cout << "[" << j + 1 << "] = " << stockdados[j] << endl;
+       // cout << "[" << j + 1 << "] = " << stockdados[j] << endl;
+
         //posi de los dados en pantalla
-            int posX = 5 + j * 10;
+          int posX = 5 + j * 10;
             int posY = 10;
 
         dibujarDado(stockdados[j], posX, posY);
