@@ -26,6 +26,7 @@ int seleccionarOpcion() {
          << "1 - Iniciar Partida\n"
          << "2 - Mostrar Estadisticas\n"
          << "3 - Mostrar Creditos\n"
+         << "4 - Mostrar Reglas"
          << "0 - Salir\n"
          << "---------------------------------------\n"
          << "Seleccione una opcion: ";
@@ -47,6 +48,9 @@ void ejecutarOpcion(int opcionMenu, int &puntajeMax, string &nombreMax) {
         case 3:
 
             mostrarCreditos();
+            break;
+        case 4:
+            mostrarReglas();
             break;
         case 0:
             rlutil::setColor(rlutil::BROWN);

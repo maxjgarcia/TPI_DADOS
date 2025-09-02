@@ -28,7 +28,7 @@
 	"primerTirada.h"
 	<iostream>
 
-1751644769 source:d:\codigos\tpifinal\jugarpartida.cpp
+1751644924 source:d:\codigos\tpifinal\jugarpartida.cpp
 	<iostream>
 	<string>
 	"tiradaDado12.h"
@@ -84,7 +84,7 @@
 	<string>
 	"rlutil.h"
 
-1751644741 source:d:\codigos\tpifinal\mostrarestadisticas.cpp
+1751644911 source:d:\codigos\tpifinal\mostrarestadisticas.cpp
 	<iostream>
 	"rlutil.h"
 
