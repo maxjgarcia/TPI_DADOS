@@ -3,6 +3,7 @@
 #include "inicioPartida.h"
 #include "mostrarEstadisticas.h"
 #include "mostrarCreditos.h"
+#include "mostrarReglas.h"
 #include "rlutil.h"
 
 using namespace std;
@@ -26,7 +27,7 @@ int seleccionarOpcion() {
          << "1 - Iniciar Partida\n"
          << "2 - Mostrar Estadisticas\n"
          << "3 - Mostrar Creditos\n"
-         << "4 - Mostrar Reglas"
+         << "4 - Mostrar Reglas\n"
          << "0 - Salir\n"
          << "---------------------------------------\n"
          << "Seleccione una opcion: ";

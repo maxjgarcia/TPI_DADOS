@@ -52,6 +52,8 @@
 		<Unit filename="mostrarEstadisticas.h" />
 		<Unit filename="mostrarGanador.cpp" />
 		<Unit filename="mostrarGanador.h" />
+		<Unit filename="mostrarReglas.cpp" />
+		<Unit filename="mostrarReglas.h" />
 		<Unit filename="pedirNombre.cpp" />
 		<Unit filename="pedirNombre.h" />
 		<Unit filename="primerTirada.cpp" />

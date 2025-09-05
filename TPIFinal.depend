@@ -134,3 +134,7 @@
 
 1750894605 d:\codigos\tpifinal\dibujarbase.h
 
+1757034127 source:d:\codigos\tpifinal\mostrarreglas.cpp
+	<iostream>
+	"rlutil.h"
+
