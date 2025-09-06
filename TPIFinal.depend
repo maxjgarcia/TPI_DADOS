@@ -99,12 +99,13 @@
 1750750041 d:\codigos\tpifinal\menu.h
 	<string>
 
-1750902343 source:d:\codigos\tpifinal\menu.cpp
+1757034195 source:d:\codigos\tpifinal\menu.cpp
 	<iostream>
 	"menu.h"
 	"inicioPartida.h"
 	"mostrarEstadisticas.h"
 	"mostrarCreditos.h"
+	"mostrarReglas.h"
 	"rlutil.h"
 
 1750890075 d:\codigos\tpifinal\rlutil.h
@@ -137,4 +138,6 @@
 1757034127 source:d:\codigos\tpifinal\mostrarreglas.cpp
 	<iostream>
 	"rlutil.h"
+
+1757034118 d:\codigos\tpifinal\mostrarreglas.h
 
